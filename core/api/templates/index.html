@@ -1,0 +1,97 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="John Doe">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Home</title>
+    <!-- Place favicon.ico in the root directory -->
+    <!-- Plugin-CSS -->
+    <link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static '/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static '/css/animate.css' %}">
+    <!-- Main-Stylesheets -->
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#primary-menu">
+
+    <section class="price-area overlay section-padding full-hight" id="price-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                    <div class="page-title">
+                        <h2>Que tipo de usuário é você?</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-3"></div>
+                <a href="/estudante">
+                    <div class="col-xs-12 col-sm-3">
+                        <div class="price-table ">
+                            <h3 class="text-uppercase price-title">Estudante</h3>
+                            <hr>
+                            <img src="{% static 'images/estudante.svg' %}" width="80%">
+                        </div>
+                    </div>
+                </a>
+                <a href="/bibliotecario">
+                    <div class="col-xs-12 col-sm-3">
+                        <div class="price-table">
+                            <h3 class="text-uppercase price-title">Bibliotecário(a)</h3>
+                            <hr>
+                            <img src="{% static 'images/bibliotecario.svg' %}" width="80%">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <p>&copy;Copyright 2018 All right resurved.  This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com">Colorlib</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!--Vendor-JS-->
+    <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+    <!--Plugin-JS-->
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/contact-form.js' %}"></script>
+    <script src="{% static 'js/jquery.parallax-1.1.3.js"' %}></script>
+    <script src="{% static 'js/scrollUp.min.js' %}"></script>
+    <script src="{% static 'js/magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <!--Main-active-JS-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
