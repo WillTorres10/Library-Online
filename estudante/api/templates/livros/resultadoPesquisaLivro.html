@@ -1,0 +1,12 @@
+{% for livro in livros %}
+<div class="panel">
+    <div class="panel-body badge-dark text-white">
+        <b>Título:</b> {{livro.titulo}}
+        <b>Autor:</b> {{livro.autor}}
+        <b>Volume:</b> {{livro.volume}}
+        <b>Versão:</b> {{livro.versao}}
+        <b>Código:</b> {{livro.codigo}}
+    </div>
+</div>
+{% endfor %}
+    

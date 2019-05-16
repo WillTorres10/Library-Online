@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block titulo %}Cadastrar Livro{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <h3>Cadastrar Livro</h3>
+        <div class="panel">
+            <div class="panel-body">
+                <div class="container">
+                    <div class="row">
+                        <div id="resultado"></div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="titulo" id="titulo" class="form-control" placeholder="Titulo">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="autor" id="autor" class="form-control" placeholder="Autor">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input type="text" name="volume" id="volume" class="form-control" placeholder="Volume">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input type="text" name="versao" id="versao" class="form-control" placeholder="Versão">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input type="text" name="codigo" id="codigo" class="form-control" placeholder="Código">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-success btn-block btn-lg" onclick="cadastrarLivro()">Cadastrar</button>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

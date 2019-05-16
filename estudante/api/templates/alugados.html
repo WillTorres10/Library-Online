@@ -1,0 +1,26 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Título</th>
+            <th>Código</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+{% for livro in livros %}
+    {% if livro.status == 0 %}
+        <tr>
+            <td>{{livro.titulo}}</td>
+            <td>{{livro.codigo}}</td>
+            <td>Entregue</td>
+        </tr>
+    {% else %}
+        <tr>
+            <td>{{livro.titulo}}</td>
+            <td>{{livro.codigo}}</td>
+            <td>Ainda não entregue</td>
+        </tr>
+    {% endif %}
+{% endfor %}
+    </tbody>
+</table>

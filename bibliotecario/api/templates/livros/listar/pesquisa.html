@@ -1,0 +1,15 @@
+{% for livro in livros %}
+<div class="col-md-12">
+    <div class="panel">
+        <div class="panel-body">
+                <b>Título:</b> {{livro.titulo}}
+                <b>Autor:</b> {{livro.autor}}
+                <b>Volume:</b> {{livro.volume}}
+                <b>Versão:</b> {{livro.versao}}
+                <b>Código:</b> {{livro.codigo}}
+            <button class="btn btn-primary" style="float:right" onclick="removerLivro('{{livro.codigo}}')">Remover</button><button class="btn btn-success" style="float:right; margin-right: 10px;">Histórico de emprestimos</button>
+        </div>
+    </div>
+</div>
+{% endfor %}
+    

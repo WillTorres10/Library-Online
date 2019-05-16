@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block titulo %}Remover Livro{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-3">
+        <input type="text" name="pesquisar" class="form-control" onkeyup="buscarLivro(this.value)" placeholder="Código do livro">
+        {% csrf_token %}
+        <input type="hidden" name="urlRemover" value="{% url 'api:removendoLivro' %}">
+    </div>
+    <div class="col-md-9" id="retorno">
+        <div id="retorno"></div>
+        <div id="resultado"></div>
+    </div>
+</div>
+{% endblock %}

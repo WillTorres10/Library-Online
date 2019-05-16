@@ -12,12 +12,10 @@
             </div>
         </div>
         <div class="list-group">
-            <a href="#" class="list-group-item">
-                Emprestar
-            </a>
-            <a href="#" class="list-group-item">Receber</a>
-            <a href="#" class="list-group-item">Cadastrar</a>
-            <a href="#" class="list-group-item">Remover</a>
+            <a href="{% url 'api:emprestarLivro' %}" class="list-group-item">Emprestar</a>
+            <a href="{% url 'api:receberLivro' %}" class="list-group-item">Receber</a>
+            <a href="{% url 'api:cadastrarLivro' %}" class="list-group-item">Cadastrar</a>
+            <a href="{% url 'api:removerLivro' %}" class="list-group-item">Remover</a>
         </div> <!-- list-group -->
     </div>
     <div class="col-md-4">
@@ -27,11 +25,8 @@
             </div>
         </div>
         <div class="list-group">
-            <a href="#" class="list-group-item">
-                Pesquisar
-            </a>
-            <a href="#" class="list-group-item">Cadastrar</a>
-            <a href="#" class="list-group-item">Remover</a>
+            <a href="{% url 'api:pesquisarEstudante' %}" class="list-group-item">Pesquisar</a>
+            <a href="{% url 'api:cadastrarEstudante' %}" class="list-group-item">Cadastrar</a>
         </div> <!-- list-group -->
     </div>
     <div class="col-md-2">

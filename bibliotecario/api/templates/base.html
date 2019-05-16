@@ -84,25 +84,24 @@
                     <div id="sidebar-menu">
                         <ul>
                             <li>
-                                <a href="index.html" class="waves-effect"><i class="mdi mdi-home"></i><span> Painel Inicial</span></a>
+                                <a href="{% url 'api:inicio' %}" class="waves-effect"><i class="mdi mdi-home"></i><span> Painel Inicial</span></a>
                             </li>
 
                             <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-book"></i> <span> Livros </span> <span class="pull-right"><i class="mdi mdi-plus"></i></span></a>
                                 <ul class="list-unstyled">
-                                    <li><a href="#">Emprestar</a></li>
-                                    <li><a href="#">Receber</a></li>
-                                    <li><a href="#">Cadastro</a></li>
-                                    <li><a href="#">Remover</a></li>
+                                    <li><a href="{% url 'api:emprestarLivro' %}">Emprestar</a></li>
+                                    <li><a href="{% url 'api:receberLivro' %}">Receber</a></li>
+                                    <li><a href="{% url 'api:cadastrarLivro' %}">Cadastro</a></li>
+                                    <li><a href="{% url 'api:removerLivro' %}">Remover</a></li>
                                 </ul>
                             </li>
 
                             <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-account-multiple"></i> <span> Estudantes </span> <span class="pull-right"><i class="mdi mdi-plus"></i></span></a>
                                 <ul class="list-unstyled">
-                                    <li><a href="#">Pesquisar</a></li>
-                                    <li><a href="#">Cadastrar</a></li>
-                                    <li><a href="#">Remover</a></li>
+                                    <li><a href="{% url 'api:pesquisarEstudante' %}">Pesquisar</a></li>
+                                    <li><a href="{% url 'api:cadastrarEstudante' %}">Cadastrar</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -147,6 +146,8 @@
         <script src="{% static 'js/jquery.scrollTo.min.js' %}"></script>
 
         <script src="{% static 'js/app.js' %}"></script>
+
+        <script src="{% static 'js/formularios.js' %}"></script>
 
     </body>
 </html>

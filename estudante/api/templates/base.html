@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Estudantes - {% block titulo %}{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta content="Admin Dashboard" name="description" />
+        <meta content="ThemeDesign" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'css/icons.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+
+    </head>
+
+
+    <body class="fixed-left layout2">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <div class="text-center">
+                        <a href="{% url 'api:inicio' %}" class="logo">Estudante <span>UFPI</span></a>
+                        <a href="{% url 'api:inicio' %}" class="logo-sm"><span>E</span></a>
+                        <!--<a href="index.html" class="logo"><img src="{% static 'images/logo_white_2.png" height="28"></a>-->
+                        <!--<a href="index.html" class="logo-sm"><img src="{% static 'images/logo_sm.png" height="36"></a>-->
+                    </div>
+                </div>
+                <!-- Button mobile view to collapse sidebar menu -->
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container">
+                        <div class="">
+                            <div class="pull-left">
+                                <button type="button" class="button-menu-mobile open-left waves-effect waves-light">
+                                    <i class="ion-navicon"></i>
+                                </button>
+                                <span class="clearfix"></span>
+                            </div>
+
+                            <ul class="nav navbar-nav navbar-right pull-right">
+                                <li class="dropdown">
+                                    <a href="" class="dropdown-toggle profile waves-effect waves-light" data-toggle="dropdown" aria-expanded="true">
+                                                <span class="profile-username">
+                                                    {{request.user.first_name}} {{request.user.last_name}}<br/>
+                                                    <small>Estudante</small>
+                                                </span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="{% url 'api:sair' %}"> Sair</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+
+            <!-- ========== Left Sidebar Start ========== -->
+
+            <div class="left side-menu">
+                <div class="sidebar-inner slimscrollleft">
+
+                    <div class="user-details">
+                        <div class="user-info">
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">{{request.user.first_name}} {{request.user.last_name}}</a>
+                            </div>
+
+                            <p class="text-muted m-0">Estudante</p>
+                        </div>
+                    </div>
+                    <!--- Divider -->
+
+
+                    <div id="sidebar-menu">
+                        <ul>
+                            <li>
+                                <a href="{% url 'api:inicio' %}" class="waves-effect"><i class="mdi mdi-home"></i><span> Painel Inicial</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div> <!-- end sidebarinner -->
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- Start right Content here -->
+
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+
+                    {% block content %}{% endblock %}
+
+                </div> <!-- content -->
+
+                <footer class="footer">
+                    © 2019 UFPI - Todos os direitos reservados.
+                </footer>
+
+            </div>
+            <!-- End Right content here -->
+
+        </div>
+        <!-- END wrapper -->
+
+
+        <!-- jQuery  -->
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/modernizr.min.js' %}"></script>
+        <script src="{% static 'js/detect.js' %}"></script>
+        <script src="{% static 'js/fastclick.js' %}"></script>
+        <script src="{% static 'js/jquery.slimscroll.js' %}"></script>
+        <script src="{% static 'js/jquery.blockUI.js' %}"></script>
+        <script src="{% static 'js/waves.js' %}"></script>
+        <script src="{% static 'js/wow.min.js' %}"></script>
+        <script src="{% static 'js/jquery.nicescroll.js' %}"></script>
+        <script src="{% static 'js/jquery.scrollTo.min.js' %}"></script>
+
+        <script src="{% static 'js/app.js' %}"></script>
+
+        <script src="{% static 'js/formularios.js' %}"></script>
+
+    </body>
+</html>

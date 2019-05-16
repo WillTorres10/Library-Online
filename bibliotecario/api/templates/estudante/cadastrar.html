@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block titulo %}Cadastrar Estudante{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <h3>Cadastrar Estudante</h3>
+        <div class="panel">
+            <div class="panel-body">
+                <div class="container">
+                    <div class="row">
+                        <div id="resultado"></div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="primeiroNome" id="primeiroNome" class="form-control" placeholder="Primeiro Nome">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="ultimoNome" id="ultimoNome" class="form-control" placeholder="Segundo Nome">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input type="text" name="email" id="email" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input type="text" name="username" id="username" class="form-control" placeholder="Username">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input type="text" name="matricula" id="matricula" class="form-control" placeholder="Matrícula">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="password" name="senha" id="senha" class="form-control" placeholder="Senha">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="password" name="repetirSenha" id="repetirSenha" class="form-control" placeholder="Repita a Senha">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-success btn-block btn-lg" onclick="cadastrarEstudante()">Cadastrar</button>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,31 @@
+
+{% for estudante in estudantes %}
+<div class="col-md-12">
+    <div class="panel">
+        <div class="panel-body">
+            <b>Nome:</b> {{estudante.first_name}} {{estudante.last_name}} <b style="margin-left:10px;">Matrícula: </b>{{estudante.matricula}} <b style="margin-left:10px;">Email: </b>{{estudante.email}} 
+            <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#myModal" style="float:right" onclick="listarHistoricoEstudante('{{estudante.matricula}}')">Histórico de emprestimos</button>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+<!-- sample modal content -->
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel">Estudante: <span class="text-primary" id="NomeEstudanteModal"></span></h4>
+                </div>
+                <div class="modal-body">
+                    <div id="resultadoModal"></div>
+                    <div id="listaHistorico"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Fechar</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    
