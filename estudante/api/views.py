@@ -10,7 +10,7 @@ from .serialization import *
 import requests
 from django.template.loader import render_to_string
 
-IP_livro = "http://0.0.0.0:8003"
+IP_livro = "/livro"
 
 def index(request):
     if request.method == "GET":

@@ -83,7 +83,7 @@ DATABASES = {
         'NAME': 'livro',
         'USER': 'livro',
         'PASSWORD': 'livro123',
-        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+        'HOST': 'mysql_livro',   # Or an IP Address that your DB is hosted on
         'PORT': '3306',
     }
 }

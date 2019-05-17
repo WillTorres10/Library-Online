@@ -5,8 +5,8 @@ from django.contrib.auth.views import login, logout
 from django.http import JsonResponse
 import requests
 
-IP_estudante = 'http://0.0.0.0:8002'
-IP_livro = 'http://0.0.0.0:8003'
+IP_estudante = '/estudantes'
+IP_livro = '/livro'
 
 # Create your views here.
 def index(request):

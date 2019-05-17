@@ -1,0 +1,101 @@
+version: '3'
+
+services:
+  core_web:
+    build: ./core
+    restart: always
+    command: bash -c "python3 ./core/manage.py makemigrations && python3 ./core/manage.py migrate && python3 ./core/manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+
+
+  bibliotecario_web:
+    build: ./bibliotecario
+    command: bash -c "python3 ./bibliotecario/manage.py makemigrations && python3 ./bibliotecario/manage.py migrate && python3 ./bibliotecario/manage.py runserver 0.0.0.0:8001"
+    volumes:
+      - .:/code
+    ports:
+      - '8001:8001'
+    restart: always
+    depends_on:
+      - mysql_bibliotecario
+    links:
+      - mysql_bibliotecario
+
+  mysql_bibliotecario:
+    restart: always
+    image: mariadb
+    ports:
+      - '3305:3306'
+    environment:
+      - "MYSQL_ROOT_PASSWORD=admin123%"
+      - "MYSQL_USER=bibliotecario"
+      - "MYSQL_DATABASE=bibliotecario"
+      - "MYSQL_PASSWORD=bibliotecario123"
+
+
+  estudante_web:
+    build: ./estudante
+    command: bash -c "python3 ./estudante/manage.py makemigrations && python3 ./estudante/manage.py migrate && python3 ./estudante/manage.py runserver 0.0.0.0:8002"
+    volumes:
+      - .:/code
+    ports:
+      - '8002:8002'
+    restart: always
+    depends_on:
+      - mysql_estudante
+    links:
+      - mysql_estudante
+
+  mysql_estudante:
+    restart: always
+    image: mariadb
+    ports:
+      - '3307:3306'
+    environment:
+      - "MYSQL_ROOT_PASSWORD=admin123%"
+      - "MYSQL_USER=estudante"
+      - "MYSQL_DATABASE=estudante"
+      - "MYSQL_PASSWORD=estudante123"
+
+  livro_web:
+    build: ./livros
+    command: bash -c "python3 ./livros/manage.py makemigrations && python3 ./livros/manage.py migrate && python3 ./livros/manage.py runserver 0.0.0.0:8003"
+    volumes:
+      - .:/code
+    ports:
+      - '8003:8003'
+    restart: always
+    depends_on:
+      - mysql_livro
+    links:
+      - mysql_livro
+
+  mysql_livro:
+    restart: always
+    image: mariadb
+    ports:
+      - '3308:3306'
+    environment:
+      - "MYSQL_ROOT_PASSWORD=admin123%"
+      - "MYSQL_USER=livro"
+      - "MYSQL_DATABASE=livro"
+      - "MYSQL_PASSWORD=livro123"
+
+  nginx:
+    build: ./web
+    ports:
+      - '80:80'
+    restart: always
+    links:
+      - core_web
+      - bibliotecario_web
+      - estudante_web
+      - livro_web
+    depends_on:
+      - core_web
+      - bibliotecario_web
+      - estudante_web
+      - livro_web

@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12c920c9-8db8-46a5-a5b8-be97b86cc7d6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bibliotecario/api/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotecario/api/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotecario/api/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotecario/api/templates/estatico/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotecario/api/templates/estatico/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotecario/api/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotecario/api/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotecario/api/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotecario/api/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotecario/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotecario/api/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliotecario/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotecario/api/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bibliotecario/bibliotecario/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bibliotecario/bibliotecario/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/core/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/estudante/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/estudante/api/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/estudante/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/estudante/api/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/estudante/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/estudante/api/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/estudante/estudante/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/estudante/estudante/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/estudante/estudante/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/estudante/estudante/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/livros/livros/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/livros/livros/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/livros/livros/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/livros/livros/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,61 +17,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bibliotecario/api/urls.py">
+        <entry file="file://$PROJECT_DIR$/bibliotecario/bibliotecario/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1275">
+              <caret line="85" column="20" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bibliotecario/api/views.py">
+        <entry file="file://$PROJECT_DIR$/estudante/estudante/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="70" column="74" lean-forward="true" selection-start-line="64" selection-start-column="8" selection-end-line="70" selection-end-column="74" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/estudante/api/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/estudante/estudante/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="e#633#665#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1320">
+              <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/estudante/api/views.py">
+        <entry file="file://$PROJECT_DIR$/livros/livros/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="105" column="25" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="104">
+              <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -117,7 +73,6 @@
         <option value="$PROJECT_DIR$/estudante/api/models.py" />
         <option value="$PROJECT_DIR$/estudante/api/serialization.py" />
         <option value="$PROJECT_DIR$/livros/api/serialize.py" />
-        <option value="$PROJECT_DIR$/livros/livros/settings.py" />
         <option value="$PROJECT_DIR$/livros/livros/urls.py" />
         <option value="$PROJECT_DIR$/livros/api/models.py" />
         <option value="$PROJECT_DIR$/core/core/settings.py" />
@@ -126,11 +81,12 @@
         <option value="$PROJECT_DIR$/livros/api/views.py" />
         <option value="$PROJECT_DIR$/bibliotecario/api/urls.py" />
         <option value="$PROJECT_DIR$/bibliotecario/bibliotecario/settings.py" />
-        <option value="$PROJECT_DIR$/estudante/estudante/settings.py" />
         <option value="$PROJECT_DIR$/bibliotecario/api/views.py" />
         <option value="$PROJECT_DIR$/estudante/api/urls.py" />
         <option value="$PROJECT_DIR$/estudante/estudante/urls.py" />
         <option value="$PROJECT_DIR$/estudante/api/views.py" />
+        <option value="$PROJECT_DIR$/estudante/estudante/settings.py" />
+        <option value="$PROJECT_DIR$/livros/livros/settings.py" />
       </list>
     </option>
   </component>
@@ -144,7 +100,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -161,12 +116,6 @@
               <item name="cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloud" type="462c0819:PsiDirectoryNode" />
               <item name="bibliotecario" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="bibliotecario" type="462c0819:PsiDirectoryNode" />
               <item name="bibliotecario" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -178,18 +127,24 @@
               <item name="cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloud" type="462c0819:PsiDirectoryNode" />
               <item name="estudante" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="estudante" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="estudante" type="462c0819:PsiDirectoryNode" />
-              <item name="estudante" type="462c0819:PsiDirectoryNode" />
+              <item name="livros" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="livros" type="462c0819:PsiDirectoryNode" />
+              <item name="livros" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -229,7 +184,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1600" height="862" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24984147" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -318,13 +272,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/livros/livros/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1674">
-          <caret line="137" column="28" lean-forward="true" selection-start-line="137" selection-start-column="24" selection-end-line="137" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/envs/docker/lib/python3.7/site-packages/django/utils/datastructures.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -383,20 +330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bibliotecario/bibliotecario/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/estudante/estudante/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="137" column="24" selection-start-line="137" selection-start-column="24" selection-end-line="137" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bibliotecario/api/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -451,6 +384,27 @@
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliotecario/bibliotecario/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="85" column="20" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/estudante/estudante/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/livros/livros/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
         </state>
       </provider>
     </entry>
