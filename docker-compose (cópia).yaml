@@ -3,6 +3,7 @@ version: '3'
 services:
   core_web:
     build: ./core
+    restart: always
     command: bash -c "python3 ./core/manage.py makemigrations && python3 ./core/manage.py migrate && python3 ./core/manage.py runserver 0.0.0.0:8000"
     volumes:
       - .:/code
@@ -87,6 +88,7 @@ services:
     build: ./web
     ports:
       - '80:80'
+    restart: always
     links:
       - core_web
       - bibliotecario_web

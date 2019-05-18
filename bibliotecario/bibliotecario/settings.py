@@ -129,6 +129,6 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "api/templates/estatico"),
 ]
 
-LOGIN_URL = 'api:acessar'
+LOGIN_URL = '/bibliotecario/acessar/'
 
 LOGIN_REDIRECT_URL = 'api:inicio'
