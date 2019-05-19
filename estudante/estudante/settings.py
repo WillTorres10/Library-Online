@@ -127,6 +127,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
+USE_X_FORWARDED_HOST = True
+FORCE_SCRIPT_NAME = '/estudante'
+
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
@@ -137,4 +140,4 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 LOGIN_URL = 'api:acessar'
 
-LOGIN_REDIRECT_URL = 'api:inicio'
+LOGIN_REDIRECT_URL = 'api:sair'

@@ -7,10 +7,10 @@ from django.http import JsonResponse, HttpResponse
 from django.middleware.csrf import get_token
 from django.views.decorators.csrf import csrf_exempt
 from .serialization import *
-import requests
+import requests, json
 from django.template.loader import render_to_string
 
-IP_livro = "/livro"
+IP_livro = "http://nginx/livro"
 
 def index(request):
     if request.method == "GET":
@@ -62,17 +62,20 @@ def gerarCSRF(request):
     if request.method == 'GET':
         return JsonResponse({'csrf': get_token(request)})
 
-@api_view(['POST'])
+
 @csrf_exempt
 def buscarEstudante(request):
-    if request.POST['matricula'] is not None:
-        matricula = request.POST['matricula']
-        normal = Estudante.objects.filter(matricula__contains=matricula)
-        if normal:
-            serializado = EstudanteSerializer(normal, many=True)
-            return Response({'dados': serializado.data})
-        else:
-            return Response({'dados': -1})
+    if request.method == 'GET':
+        return HttpResponse('Estudante')
+    elif request.method == 'POST':
+        matricula = request.POST.get('matricula')
+        if matricula is not None:
+            normal = Estudante.objects.filter(matricula__contains=matricula)
+            if normal:
+                serializado = EstudanteSerializer(normal, many=True)
+                return JsonResponse({'dados': serializado.data})
+            else:
+                return JsonResponse({'dados': -1})
 
 @api_view(['POST'])
 @csrf_exempt

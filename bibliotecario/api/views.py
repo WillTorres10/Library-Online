@@ -3,10 +3,10 @@ from django.template.loader import render_to_string
 from django.urls import reverse
 from django.contrib.auth.views import login, logout
 from django.http import JsonResponse
-import requests
+import requests, json
 
-IP_estudante = '/estudantes'
-IP_livro = '/livro'
+IP_estudante = 'http://nginx/estudante'
+IP_livro = 'http://nginx/livro'
 
 # Create your views here.
 def index(request):
@@ -38,6 +38,8 @@ def pesquisarEstudante(request):
         return render(request, 'estudante/pesquisar.html')
     elif request.method == 'POST':
         matricula = request.POST['matricula']
+        session = requests.Session()
+        session.trust_env = False
         lista = requests.post(IP_estudante+'/api/buscarEstudante/', data={'matricula': matricula})
         if lista.json()['dados'] != -1:
             template = render_to_string('estudante/listar/pesquisa.html', {'estudantes': lista.json()['dados']})
@@ -71,7 +73,6 @@ def emprestarLivro(request):
             return JsonResponse({'retorno': 'Não foi possível encontrar'})
 
 def emprestandoLivro(request):
-    print('ALOW')
     if request.method == 'POST':
         codigo = request.POST['codigo']
         return JsonResponse({'retorno': render_to_string('livros/emprestando.html', {'codigo': codigo})})
