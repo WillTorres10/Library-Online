@@ -9,12 +9,12 @@ Para facilitar o desenvolvimento compartilhado em ambos da equipe, foi utilizado
 
 Para finalizar o trabalho, era necessário rodar a aplicação em dois diferentes provedores de nuvem. Os provedores escolhidos para os testes foram a Amazon Web Service (AWS) e a Google Cloud. O fato de usarmos Docker permitiu a fácil migração entre os provedores.
 
-### Tecnologias Usadas
+## Tecnologias Usadas
 
 - Django;
 - MariaDB;
 - Nginex
 - Docker;
 
-##Atenção
+## Atenção
 Desde que esse projeto foi publicado não houve nenhuma atualização. Há chances de haver problemas em relação à brachas de segurança na aplicação. Recomendamos somente para entedimento da implementação de uma arquitetura de microserviços.
