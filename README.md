@@ -15,3 +15,6 @@ Para finalizar o trabalho, era necessário rodar a aplicação em dois diferente
 - MariaDB;
 - Nginex
 - Docker;
+
+##Atenção
+Desde que esse projeto foi publicado não houve nenhuma atualização. Há chances de haver problemas em relação à brachas de segurança na aplicação. Recomendamos somente para entedimento da implementação de uma arquitetura de microserviços.
